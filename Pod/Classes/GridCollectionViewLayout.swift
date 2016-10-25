@@ -149,7 +149,7 @@ extension GridCollectionViewLayout {
         let startRow = GridCollectionViewLayout.firstRowInRect(rect, withRowHeight: rowHeight)
         let endRow = GridCollectionViewLayout.lastRowInRect(rect, withRowHeight: rowHeight, max: rows)
 
-        var startIndex = GridCollectionViewLayout.firstIndexInRow(startRow, withItemsPerRow: itemsPerRow)
+        let startIndex = GridCollectionViewLayout.firstIndexInRow(startRow, withItemsPerRow: itemsPerRow)
         var endIndex = GridCollectionViewLayout.lastIndexInRow(endRow, withItemsPerRow: itemsPerRow, numberOfItems: items)
         
         guard endIndex != NSNotFound else {
